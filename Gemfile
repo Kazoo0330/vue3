@@ -62,3 +62,8 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'materialize-sass'
 gem 'material_icons'
+
+gem 'haml-rails'
+gem 'erb2haml'
+# change erb to haml
+# run 'haml:convert_erbs' to convert the erb files. not to replace.
