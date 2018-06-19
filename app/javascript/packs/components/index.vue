@@ -6,7 +6,7 @@
         <input v-model="newTask" id="new-task-form" class="form-control padding-default" placeholder="Add your task!!">
       </div>
       <div class="col s2 m1">
-        <button class="btn-floating waves-effect waves-light red" v-on:click="createTask">
+        <button class="btn-floating waves-effect waves-light blue" v-on:click="createTask">
           <i class="material-icons">add</i>
         </button>
       </div>
@@ -117,10 +117,9 @@
   }
   .btn-custom {
     text-transform: none;
-    padding: 0 10px;
+    <!-- padding: 0 10px; -->
     font-size: 0.8rem;
-    background-color: white;
-    color: black;
+    color: white;
     border-color: black;
   }
 </style>
