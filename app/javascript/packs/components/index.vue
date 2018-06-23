@@ -36,10 +36,13 @@
 
 <script>
   import axios from 'axios';
+  import { csrfToken } from 'rails-ujs' //CSRFtokenの対策でrails-ujsをimport
+
+  axios.defaults.headers.common['X-CSRF-Token'] = csrfToken()
 
 //CSRFtoken
-  const token = document.getElementsByName('csrf-token')[0].getAttribute('content');
-  axios.defaults.headers.common['X-CSRF-Token'] = token;
+//  const token = document.getElementsByName('csrf-token')[0].getAttribute('content');
+//  axios.defaults.headers.common['X-CSRF-Token'] = token;
 
   export default {
     data: function () {
