@@ -9,4 +9,6 @@ Things you may want to cover:
 
 run ```yarn add axios```
 
+* CSRFtoken issue
+
 * ...
